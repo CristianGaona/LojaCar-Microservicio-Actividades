@@ -22,4 +22,11 @@ public class ActivityServiceImpl implements IActivityService {
 		return activityDao.save(activity);
 	}
 
+	//listar varias actividades por id
+	@Override
+	public Iterable<Activity> findAllById(Iterable<Integer> ids) {
+		
+		return activityDao.findAllById(ids);
+	}
+
 }
