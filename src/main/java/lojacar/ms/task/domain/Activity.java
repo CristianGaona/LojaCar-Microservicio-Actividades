@@ -30,6 +30,9 @@ public class Activity implements Serializable {
 	@Column(name = "employee_id")
 	private Integer employeeId;
 	
+	@Column(name = "client_id")
+	private Integer clientId;
+	
 	//@DateTimeFormat(pattern = "yyyy-MM-dd")
 	@Column(name = "date_assignment")
 	@JsonFormat(pattern="yyyy-MM-dd")
@@ -71,6 +74,15 @@ public class Activity implements Serializable {
 	public void setDateAssignment(Date dateAssignment) {
 		this.dateAssignment = dateAssignment;
 	}
+
+	public Integer getClientId() {
+		return clientId;
+	}
+
+	public void setClientId(Integer clientId) {
+		this.clientId = clientId;
+	}
+	
 	
 	
 }
